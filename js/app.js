@@ -103,6 +103,9 @@ $(function() {
      * above using Handlebars) and append it to the list of all
      * available feeds within the menu.
      */
+
+
+    //Change the allFeeds variable to something silly, which will break the app and show a failing test.
     allFeeds.forEach(function(feed) {
         feed.id = feedId;
         feedList.append(feedItemTemplate(feed));
@@ -127,5 +130,6 @@ $(function() {
      */
     menuIcon.on('click', function() {
         $('body').toggleClass('menu-hidden');
+
     });
 }());
